@@ -2,7 +2,7 @@ public class PlayGame {
     public Players player1, player2;
 
     public void turn(Players player1, Players player2)  {
-        try {
+
             if (player1.getChoose() == "pepper" && player2.getChoose() == "pepper") {
                 System.out.println(player1.getName() + "and" + player2.getName() + "tie");
                 System.out.printf("%s points is %d \n", player1.getName(), player1.getPoint(0));
@@ -40,9 +40,5 @@ public class PlayGame {
                 System.out.printf("%s points is %d \n", player1.getName(), player1.getPoint(0));
                 System.out.printf("%s points is %d ", player2.getName(), player2.getPoint(1));
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-
         }
     }
-}
